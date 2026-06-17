@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Z-chat</title>
+  <link rel="stylesheet" href="/frontend/css/boot.css" />
+  <link rel="stylesheet" href="/frontend/css/layout.css" />
+  <link rel="stylesheet" href="/frontend/css/messages.css" />
+  <link rel="stylesheet" href="/frontend/css/form.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+</head>
+
+<body>
+
+  <!-- BOOT SCREEN -->
+  <div id="boot-screen">
+    <div class="boot-logo">𝓩</div>
+    <span class="boot-title">Z-chat</span>
+    <span class="boot-sub">inicializando sistema...</span>
+    <div class="boot-bar">
+      <div class="boot-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- APP -->
+  <div id="app">
+
+    <!-- HEADER -->
+    <header id="header">
+      <div class="header-left">
+        <div class="logo">𝓩</div>
+        <div class="header-info">
+          <h1>Z-chat</h1>
+          <div class="status">
+            <span class="status-dot"></span>
+            <span class="status-text">online</span>
+          </div>
+        </div>
+      </div>
+      <button id="btn-nova">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19" />
+          <line x1="5" y1="12" x2="19" y2="12" />
+        </svg>
+        NOVA CONVERSA
+      </button>
+    </header>
+
+    <!-- MENSAGENS -->
+    <div id="chat-messages">
+      <div class="empty-state" id="empty-state">
+        <div class="empty-icon">💬</div>
+        <h2>COMO POSSO AJUDAR?</h2>
+        <p>Especialista em Linux, programação e tecnologia.</p>
+        
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div id="chat-form-wrapper">
+      <form id="chat-form">
+        <textarea id="chat-input" placeholder="Digite sua mensagem... (Enter para enviar)" rows="1"></textarea>
+        <button type="button" id="btn-stop" class="hidden" title="Parar resposta">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+          </svg>
+        </button>
+        <button type="submit" id="btn-send" title="Enviar">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" />
+          </svg>
+        </button>
+      </form>
+      <div id="form-hint">Shift+Enter para nova linha · Enter para enviar</div>
+    </div>
+
+  </div>
+
+  <script type="module" src="frontend/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+
+:root {
+  --bg:          #000000;
+  --surface:     #0a0a0a;
+  --surface-2:   #111111;
+  --border:      #1a1a1a;
+  --border-2:    #222222;
+  --accent:      #00ff88;
+  --accent-2:    #00ccff;
+  --accent-dim:  #00ff8818;
+  --accent-glow: #00ff8844;
+  --text:        #e8e8e8;
+  --muted:       #555555;
+  --radius:      10px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%; width: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+
+#boot-screen {
+  position: fixed; inset: 0;
+  background: #000;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  z-index: 200;
+  gap: 18px;
+  transition: opacity 0.5s ease;
+}
+
+.boot-logo {
+  width: 72px; height: 72px;
+  border: 1px solid var(--accent);
+  border-radius: 18px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 34px;
+  animation: glow-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px var(--accent-dim); }
+  50%       { box-shadow: 0 0 40px var(--accent-glow), 0 0 80px var(--accent-dim); }
+}
+
+.boot-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem; font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 6px;
+}
+
+.boot-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 2px;
+}
+
+.boot-bar {
+  width: 200px; height: 2px;
+  background: var(--border-2);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.boot-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border-radius: 99px;
+  animation: boot-load 1.6s ease forwards;
+}
+
+@keyframes boot-load {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.04) 2px,
+    rgba(0,0,0,0.04) 4px
+  );
+  z-index: 9999;
+}
