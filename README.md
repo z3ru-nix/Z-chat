@@ -1,13 +1,14 @@
 # Z-code 🚀
 
-A **Z-code** é uma ferramenta open-source criada para ajudar desenvolvedores a estudarem programação e dominarem o ecossistema Linux sem as amarras e limitações das ferramentas de IA tradicionais. 
+A **Z-code** é uma ferramenta open-source criada para ajudar desenvolvedores a estudarem programação e dominarem o ecossistema Linux sem as amarras, custos e limitações das ferramentas de IA tradicionais. 
 
-Cansado de estourar limites de tokens e enfrentar barreiras de pagamento enquanto tentava aprender, decidi criar uma IA focada no ensino de **Backend**. A Z-code realiza buscas em tempo real em fontes selecionadas e estruturadas com as melhores práticas do mercado, garantindo um aprendizado sólido e direto ao ponto.
+Cansado de estourar limites de tokens e enfrentar barreiras de pagamento enquanto tentava aprender, decidi criar uma solução baseada em **IA Local usando o Ollama**. O foco atual é o ensino de **Backend**, onde a Z-code realiza buscas em tempo real em fontes selecionadas e estruturadas com as melhores práticas do mercado, unindo o poder do LLM local com dados atualizados.
 
 ---
 
 ## 🛠️ Status do Projeto & Arquitetura
 
+* **Coração da IA:** [Ollama](https://ollama.com/) (Rodando LLMs localmente de forma gratuita e privada).
 * **Foco Atual:** Ensino de Backend e Linux.
 * **Banco de Dados:** MongoDB.
 * **Hospedagem:** O projeto foi desenhado para rodar **100% localmente** neste momento. 
@@ -19,6 +20,6 @@ Cansado de estourar limites de tokens e enfrentar barreiras de pagamento enquant
 
 ## 🐧 A Filosofia por trás da Z-code
 
-A ideia central da Z-code foi inspirada na filosofia de Linus Torvalds: **criar algo sem limites, livre e colaborativo**. Vamos usar essa ferramenta para evoluir juntos e construir uma comunidade forte!
+A ideia central da Z-code foi inspirada na filosofia de Linus Torvalds: **criar algo sem limites, livre e colaborativo**. Com o Ollama, nós realmente somos donos do nosso próprio ambiente de estudos. Vamos usar essa ferramenta para evoluir juntos e construir uma comunidade forte!
 
 Contribuições são sempre bem-vindas. Sinta-se à vontade para abrir Issues e Pull Requests para atualizar o código e melhorar as buscas.
