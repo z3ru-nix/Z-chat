@@ -8,18 +8,18 @@ Cansado de estourar limites de tokens e enfrentar barreiras de pagamento enquant
 
 ## 🛠️ Status do Projeto & Arquitetura
 
-* **Coração da IA:** [Ollama](https://ollama.com/) (Rodando localmente de forma gratuita e privada).
+* **Coração da IA:** [Ollama](https://ollama.com/) (Rodando localmente de forma gratuita e privada. A instalação do Ollama na sua máquina é obrigatória para o funcionamento).
 * **Foco Atual:** Ensino de Backend e Linux.
 * **Banco de Dados:** MongoDB.
 * **Hospedagem:** O projeto foi desenhado para rodar **100% localmente** neste momento. 
-* **Código em Transição:** Como o projeto estava quase pronto para deploy e decidi voltar para o modelo local, você encontrará alguns trechos de código temporários e linhas comentadas que serão limpos em atualizações futuras.
+* **Código em Transição:** Como o projeto estava quase pronto para deploy e decidi voltar atrás para o modelo local, você encontrará alguns trechos de código temporários, linhas comentadas e pequenos detalhes a serem refinados que serão limpos em atualizações futuras — mas nada que atrapalhe a experiência atual.
 
-> ⚠️ **Aviso de Isenção de Responsabilidade:** Esta ferramenta foi criada estritamente para fins educacionais. O uso indevido ou para más intenções é de inteira responsabilidade do usuário. Use com sabedoria.
+> ⚠️ **Aviso de Isenção de Responsabilidade:** Esta ferramenta foi criada estritamente para fins educacionais e de estudo. O uso indevido ou para más intenções é de inteira responsabilidade do usuário. Use com sabedoria.
 
 ---
 
 ## 🐧 A Filosofia por trás da Z-code
 
-A ideia central da Z-code foi inspirada na filosofia de Linus Torvalds: **criar algo sem limites, livre e colaborativo**. Com o Ollama, nós realmente somos donos do nosso próprio ambiente de estudos. Vamos usar essa ferramenta para evoluir juntos e construir uma comunidade forte!
+A ideia força da Z-code foi inspirada na filosofia de Linus Torvalds: **criar algo sem limites, livre e colaborativo**. Com o Ollama, nós realmente nos tornamos donos do nosso próprio ambiente de estudos. Vamos usar essa ferramenta para evoluir juntos e construir uma comunidade forte!
 
-Contribuições são sempre bem-vindas. Sinta-se à vontade para abrir Issues e Pull Requests para atualizar o código e melhorar as buscas.
+Contribuições são sempre bem-vindas. Sinta-se à vontade para abrir *Issues* e *Pull Requests* para atualizar o código, corrigir bugs ou melhorar os parâmetros de busca.
