@@ -107,10 +107,10 @@ async function _postFallback(message, { onToken, onDone, onError }) {
 
 
 function _getSession() {
-  //let id = sessionStorage.getItem('name_session'); //altere
+  let id = sessionStorage.getItem('ia_session'); 
   if (!id) {
     id = Math.random().toString(36).slice(2);
-   //sessionStorage.setItem('name_session', id); //altere
+    sessionStorage.setItem('ia_session', id); 
   }
   return id;
 }
